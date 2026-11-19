@@ -4,6 +4,18 @@ All notable changes to this project are documented in this file. The format
 is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the
 project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed
+
+- Releases were built with Go 1.26.5 and with `golang.org/x/net` 0.52.0,
+  `golang.org/x/text` 0.36.0 and `google.golang.org/grpc` 1.79.3, which have
+  known vulnerabilities in code the provider calls. Among them is a
+  `crypto/x509` bug that accepts distrusted intermediate certificates when the
+  provider verifies PBS against CAs. Releases now build with Go 1.26.11, and
+  the modules move to `x/net` 0.60.0, `x/text` 0.42.0 and `grpc` 1.83.2.
+  `govulncheck` finds no vulnerability the provider reaches.
+
 ## [1.0.0] - 2026-11-15
 
 The first stable release: from now on, a configuration that works with
