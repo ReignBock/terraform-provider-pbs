@@ -916,6 +916,7 @@ First release. Verified against Proxmox Backup Server 4.0.22, 4.2.0 and
   certificate only, not one the server sends after it, which anyone could
   send.
 
+[Unreleased]: https://github.com/rfdrew/terraform-provider-pbs/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/rfdrew/terraform-provider-pbs/compare/v0.4.0...v1.0.0
 [0.4.0]: https://github.com/rfdrew/terraform-provider-pbs/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/rfdrew/terraform-provider-pbs/compare/v0.2.0...v0.3.0
